@@ -17,3 +17,9 @@ counting. Learn more at [api.formagg.io](http://api.formagg.io).
 #### Resources
 * <http://ender.jit.su/>
 * <https://github.com/airbnb/infinity>
+
+#### To Do
+* Add in a Fixed top nav with search options for name, maker and location.
+* Add in a option to use the visitors current location to filter cheeses.
+* Add in a cheese count.
+* Add in a Favorite option.
