@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>Cheese Board to Infinity</title>
+    <link rel=stylesheet type=text/css href=assets/o2.css>
+    <link rel=stylesheet type=text/css href=assets/custom.css>
+  </head>
+  <body>
+    <div class='container main-container'>
+      <h1>Formagg.io Infinity Cheese Board</h1>
+      <hr>
+      <div id=Board class=row>
+        <div class=span3>
+          <div class=row-fluid>
+            <div class='span12 list-view'>
+            </div>
+          </div>
+        </div>
+        <div class=span3>
+          <div class=row-fluid>
+            <div class='span12 list-view'>
+            </div>
+          </div>
+        </div>
+        <div class=span3>
+          <div class=row-fluid>
+            <div class='span12 list-view'>
+            </div>
+          </div>
+        </div>
+        <div class=span3>
+          <div class=row-fluid>
+            <div class='span12 list-view'>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type=text/html id=demo-template>
+      <div class=row-fluid>
+        <% for(var i = 0, length = pugs.length; i < length; i++) { %>
+          <%= pugs[i] %>
+        <% } %>
+      </div>
+    </script>
+
+    <script type=text/html id=cheese-tpl>
+      <div class='span12 pug-item'>
+        <div class='matte-media-box cheese-box'>
+
+          <img class='curd' data-original="<%= cheese.main_image.large %>" style="margin:12; width: 227px;">
+          <div class=caption>
+            <h4 class=caption-name><%= cheese.name %></h4>
+            <p class=caption-text><%= (cheese.maker || '') %></p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script type=text/html id=spinner-tpl>
+      <div class=row>
+        <div class=span12>
+          <img src='assets/img/spinner.gif' class=spinner alt='Loading...'>
+        </div>
+      </div>
+    </script>
+
+    <script type=text/javascript src=https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js></script>
+    <script type=text/javascript src=assets/js/vendor/ender.min.js></script>
+    <script>ender.noConflict();</script>
+    <script type=text/javascript src=infinity.js></script>
+    <script type=text/javascript>
+      var Board = {};
+      Board.config = {
+        infinityOn: true
+      };
+    </script>
+    <script type=text/javascript src=assets/js/render.js></script>
+    <script type=text/javascript src=assets/js/index.js></script>
+  </body>
+</html>

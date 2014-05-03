@@ -1,0 +1,38 @@
+a, a:hover {
+  color: #EC2E90;
+}
+img {
+  display: inline-block;
+  background-image: url("http://www.igourmet.com/images/products/sardo.jpg");
+}
+.main-container {
+  margin-top: 25px;
+}
+h2, h3 {
+  font-weight: normal;
+}
+
+.cheese-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cheese-box:hover {
+  box-shadow: 0px 0px 5px 1px #EE71BA;
+  border-color: #EE71BA;
+}
+.cheese-box .caption {
+  padding-right: 70px;
+}
+.cheese {
+  border-radius: 4px;
+}
+.spinner {
+  margin: 40px 493px;
+}
+.rotate-right {
+  -webkit-transform: rotate(3deg);
+}
+.rotate-left {
+  -webkit-transform: rotate(-3deg);
+}
