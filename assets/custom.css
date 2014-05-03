@@ -3,7 +3,6 @@ a, a:hover {
 }
 img {
   display: inline-block;
-  background-image: url("http://www.igourmet.com/images/products/sardo.jpg");
 }
 .main-container {
   margin-top: 25px;
@@ -11,7 +10,6 @@ img {
 h2, h3 {
   font-weight: normal;
 }
-
 .cheese-box {
   position: relative;
   width: 100%;
